@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+    --color-violet: #5a108a;
+    --color-yellow: #ffde66;
+    --color-blue: #001ed3;
+    --color-text: #16213e;
+    --color-bg: #ffffff;
+    --font-primary: "Inter", sans-serif;
+}   
+
+* {
+    font-family: var(--font-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    @apply max-w-[1378px] mx-auto px-4 md:px-6;
+}
+
+/* bg-gradient-to-b from-transparent to-black/30
