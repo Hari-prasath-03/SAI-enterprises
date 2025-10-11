@@ -1,10 +1,10 @@
-import { handshake, quote } from "../assets";
-import Heading from "../components/ui/Heading";
-import Reveal from "../components/ui/Reveal";
+import { handshake, quote } from "../../../assets";
+import Heading from "../../../components/ui/Heading";
+import Reveal from "../../../components/ui/Reveal";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-20 bg-white">
+    <section id="testimonials" className="py-20 bg-white overflow-x-hidden">
       <Heading title="Testimonials" subtitle="Our Clients Say" />
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <div className="w-full">

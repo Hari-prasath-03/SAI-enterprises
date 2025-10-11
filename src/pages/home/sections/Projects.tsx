@@ -4,17 +4,17 @@ import {
   serviceImage3,
   serviceImage4,
   serviceImage5,
-} from "../assets";
-import Heading from "../components/ui/Heading";
-import Reveal from "../components/ui/Reveal";
+} from "../../../assets";
+import Heading from "../../../components/ui/Heading";
+import Reveal from "../../../components/ui/Reveal";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-white">
-      <Heading title="OUR WORKS" subtitle="Our Special Projects" />
+    <section id="projects" className="py-10 sm:py-20">
+      <Heading title="Our works" subtitle="Our Special Projects" />
 
-      <div className="max-w-6xl mx-auto grid grid-cols-3 grid-rows-2 gap-2 px-4">
-        <div className="row-span-2">
+      <div className="max-w-6xl mx-auto flex flex-col sm:grid grid-cols-3 grid-rows-2 gap-2 px-4">
+        <div className="row-span-2 hidden sm:block">
           <img src={serviceImage2} alt="Project 1" className="object-cover" />
         </div>
 

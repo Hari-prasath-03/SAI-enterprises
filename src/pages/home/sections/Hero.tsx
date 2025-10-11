@@ -1,7 +1,7 @@
-import { engineer, heroImage1, ruler, shape } from "../assets";
-import CountUp from "../components/CountUp";
-import Button from "../components/ui/Button";
-import Reveal from "../components/ui/Reveal";
+import { engineer, heroImage1, ruler, shape } from "../../../assets";
+import Button from "../../../components/ui/Button";
+import CountUp from "../../../components/ui/CountUp";
+import Reveal from "../../../components/ui/Reveal";
 
 const Hero = () => {
   const heighlights = [
@@ -38,20 +38,20 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen mb-40">
+    <section id="hero" className="min-h-screen mb-10 sm:mb-40">
       <div
-        className="min-h-[85vh] bg-center bg-cover relative"
+        className="min-h-[85vh] bg-center bg-cover relative overflow-x-hidden"
         style={{ backgroundImage: `url(${heroImage1})` }}
       >
         <div className="absolute bg-black/15 inset-0" />
-        <div className="relative container flex gap-10 flex-col pt-16 lg:pt-20 z-10">
+        <div className="relative container flex gap-6 sm:gap-10 flex-col pt-16 lg:pt-20 z-10">
           <Reveal>
-            <h1 className="text-7xl font-semibold text-violet">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold text-violet">
               Capabilities that set a new industry standard
             </h1>
           </Reveal>
           <Reveal>
-            <p className="text-white/90 text-2xl max-w-3xl">
+            <p className="text-white/90 text-lg sm:text-2xl sm:max-w-3xl">
               We delivers high-quality fabrication, machining, and field
               services tailored to your business needs—on time, every time.
             </p>
@@ -59,7 +59,7 @@ const Hero = () => {
           <Button />
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col md:flex-row justify-center">
         <div className="flex flex-col items-center text-white bg-violet p-8 pr-12">
           <CountUp
             className="text-8xl font-bold"
@@ -79,7 +79,7 @@ const Hero = () => {
         </div>
 
         <div className="min-w-[300px] relative">
-          <div className="absolute bg-bg left-0 top-1/3 transform -translate-y-1/2 w-[125%] h-[220%] shadow-lg border-t-6 border-blue p-4 flex flex-col icems-center justify-center">
+          <div className="relative md:absolute z-10 bg-bg left-0 top-0 md:top-1/3 md:transform md:-translate-y-1/2 w-full md:w-[125%] md:h-[220%] shadow md:shadow-lg md:border-t-6 border-blue p-4 flex flex-col icems-center justify-center">
             <Reveal>
               <h1 className="text-2xl font-semibold text-violet text-center">
                 We Construct and Manage Places and Infrastructures

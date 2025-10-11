@@ -10,6 +10,8 @@ import shape from "./icons/shape.svg";
 import rightArrow from "./icons/right-arrow.svg";
 import plus from "./icons/plus.svg";
 import play from "./icons/play.svg";
+import ham from "./icons/ham.svg";
+import close from "./icons/close.svg";
 
 import telephon from "./icons/telephon.svg";
 import notify from "./icons/notification.svg";
@@ -36,7 +38,7 @@ import finalvideo from "./images/contact-2.png"
 export { twitter, facebook, linkedin, youtube };
 export { engineer, ruler, shape };
 
-export { rightArrow, play, plus, telephon, notify, quote };
+export { rightArrow, play, plus, telephon, notify, quote, ham, close };
 
 export { heroImage1, heroImage2 };
 export { aboutImage1, aboutImage2 };

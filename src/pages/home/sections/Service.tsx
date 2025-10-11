@@ -4,8 +4,8 @@ import {
   serviceImage2,
   serviceImage3,
   serviceImage4,
-} from "../assets";
-import Reveal from "../components/ui/Reveal";
+} from "../../../assets";
+import Reveal from "../../../components/ui/Reveal";
 
 const Service = () => {
   const services = [
@@ -29,9 +29,9 @@ const Service = () => {
     },
   ];
   return (
-    <section id="service" className="py-20">
-      <div className="grid grid-cols-5">
-        <div className="col-span-2">
+    <section id="service" className="py-10 sm:py-20">
+      <div className="flex flex-col sm:grid sm:grid-cols-5">
+        <div className="hidden sm:block col-span-2">
           <img src={serviceImage1} alt="service" className="w-full h-[120%]" />
         </div>
         {services.map((service, i) => (
@@ -45,7 +45,7 @@ const Service = () => {
                 i % 2 == 0 ? "bg-[#213d6f]/85" : "bg-[#d03254]/85"
               }`}
             />
-            <div className="relative z-10 h-full flex flex-col justify-between p-6">
+            <div className="relative z-10 h-full flex flex-col justify-between p-6 overflow-hidden">
               <div className="flex flex-col text-white gap-7">
                 <Reveal>
                   <h3 className="text-4xl font-bold">{service.title}</h3>

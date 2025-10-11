@@ -1,27 +1,48 @@
-import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Service from "./sections/Service";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
-import Testimonials from "./sections/Testimonials";
-import FinalVideo from "./sections/FinalVideo";
-import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout";
+
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Service from "./pages/service/Service";
+import Project from "./pages/project/Project";
+import Contact from "./pages/contact/Contact";
+import PortfolioArchive from "./pages/portfolio-archive/PortfolioArchive";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Service />
-      <Projects />
-      <Contact />
-      <Testimonials />
-      <FinalVideo />
-      <Footer />
-    </div>
-  ); 
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/portfolio-archive",
+          element: <PortfolioArchive />,
+        },
+        {
+          path: "/service",
+          element: <Service />,
+        },
+        {
+          path: "/project",
+          element: <Project />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={routes} />;
 };
 
 export default App;

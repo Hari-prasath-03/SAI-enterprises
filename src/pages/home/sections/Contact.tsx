@@ -1,5 +1,5 @@
-import { contactImage, notify, telephon } from "../assets";
-import Reveal from "../components/ui/Reveal";
+import { contactImage, notify, telephon } from "../../../assets";
+import Reveal from "../../../components/ui/Reveal";
 
 const Contact = () => {
   const socials = [
@@ -23,14 +23,14 @@ const Contact = () => {
     <p>CHENNAI--600098</p>,
   ];
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 overflow-x-hidden">
       <div
         className="min-h-[85vh] bg-center bg-cover relative"
         style={{ backgroundImage: `url(${contactImage})` }}
       />
-      <div className="flex justify-center gap-3 ml-10">
+      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:ml-10">
         <div className="min-w-[300px] relative">
-          <div className="absolute bg-bg right-0 top-1/3 transform -translate-y-1/2 w-[160%] shadow-lg border-t-6 border-yellow p-4 py-6 flex flex-col icems-center justify-center">
+          <div className="relative sm:absolute bg-bg sm:right-0 sm:top-1/3 sm:transform sm:-translate-y-1/2 w-full sm:w-[160%] shadow-lg border-t-6 border-yellow p-4 py-6 flex flex-col icems-center justify-center">
             <Reveal>
               <h2 className="uppercase text-base text-black/80 mb-5">
                 Company Address
@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
         {socials.map(({ image, name, line1, line2 }, i) => (
-          <div key={i} className="flex flex-col items-center p-6">
+          <div key={i} className="flex flex-col p-6 mx-auto sm:mx-0 min-w-[300px] sm:min-w-fit">
             <div className="flex gap-4.5 items-center">
               <Reveal>
                 <img

@@ -1,8 +1,8 @@
-import { finalvideo, play } from "../assets";
+import { finalvideo, play } from "../../../assets";
 
 const FinalVideo = () => {
   return (
-    <section id="final-video" className="py-20">
+    <section id="final-video" className="py-20 overflow-x-hidden">
       <div
         className="min-h-[85vh] bg-center bg-cover relative flex justify-center items-center"
         style={{ backgroundImage: `url(${finalvideo})` }}

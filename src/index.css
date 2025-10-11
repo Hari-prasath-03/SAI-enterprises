@@ -21,4 +21,8 @@ html {
     @apply max-w-[1378px] mx-auto px-4 md:px-6;
 }
 
+.page {
+    @apply min-h-screen
+}
+
 /* bg-gradient-to-b from-transparent to-black/30

@@ -1,12 +1,12 @@
-import { aboutImage1, aboutImage2, play } from "../assets";
-import Button from "../components/ui/Button";
-import Reveal from "../components/ui/Reveal";
+import { aboutImage1, aboutImage2, play } from "../../../assets";
+import Button from "../../../components/ui/Button";
+import Reveal from "../../../components/ui/Reveal";
 
 const About = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-10 sm:py-20">
       <div className="container">
-        <div className="max-w-6xl mx-auto flex flex-row">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row">
           {/* Left */}
           <div className="flex-1 flex flex-col gap-6">
             <div className="space-y-2">
@@ -16,7 +16,7 @@ const About = () => {
                 </h3>
               </Reveal>
               <Reveal>
-                <h1 className="text-text text-5xl font-bold">
+                <h1 className="text-text text-4xl sm:text-5xl font-bold tracking-tight">
                   With our knowledge we guarantee success
                 </h1>
               </Reveal>
@@ -38,7 +38,7 @@ const About = () => {
             <Button />
           </div>
           {/* Right */}
-          <div className="flex-1 flex justify-center">
+          <div className="hidden flex-1 sm:flex justify-center">
             <div className="h-full w-4/5 relative">
               <div className="absolute z-10 -top-20 right-10 border-[12px] border-white shadow-md">
                 <img
