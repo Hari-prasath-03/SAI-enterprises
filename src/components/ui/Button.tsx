@@ -1,15 +1,29 @@
-import { rightArrow } from "../../assets";
-import Reveal from "./Reveal";
+import { motion } from "motion/react";
 
-const Button = ({ className }: { className?: string }) => {
+import Reveal from "./Reveal";
+import { rightArrow } from "../../assets";
+
+const Button = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: string;
+}) => {
   return (
     <Reveal>
-      <button
-        className={`bg-violet text-white py-2.5 px-8 sm:px-10 w-fit inline-flex gap-3 items-center ${className}`}
+      <motion.button
+        whileHover="hover"
+        className={`text-white py-2.5 px-8 sm:px-10 w-fit inline-flex gap-3 items-center cursor-pointer ${className}`}
       >
-        <span>Learn more</span>
-        <img src={rightArrow} className="mt-0.5" alt="right arrow" />
-      </button>
+        <span>{children}</span>
+        <motion.img
+          variants={{ hover: { x: 5 } }}
+          src={rightArrow}
+          className="mt-0.5"
+          alt="right arrow"
+        />
+      </motion.button>
     </Reveal>
   );
 };

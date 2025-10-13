@@ -12,10 +12,12 @@ import plus from "./icons/plus.svg";
 import play from "./icons/play.svg";
 import ham from "./icons/ham.svg";
 import close from "./icons/close.svg";
-
 import telephon from "./icons/telephon.svg";
 import notify from "./icons/notification.svg";
 import quote from "./icons/quote.svg";
+import brush from "./icons/brush.svg";
+import helmet from "./icons/helmet.svg";
+import scrowdrivers from "./icons/screw-drivers.svg";
 
 import heroImage1 from "./images/hero-1.png";
 import heroImage2 from "./images/hero-2.jpg";
@@ -31,14 +33,30 @@ import serviceImage3 from "./images/service-3.jpg";
 import serviceImage4 from "./images/service-5.jpg";
 import serviceImage5 from "./images/service-4.jpg";
 
+import aboutBanner from "./others/about-banner.png";
+import engineerImage from "./others/engineer.png";
+import getAQuote from "./others/get-a-quote.png";
+
 import handshake from "./images/contact-1.png";
 
-import finalvideo from "./images/contact-2.png"
+import finalvideo from "./images/contact-2.png";
 
 export { twitter, facebook, linkedin, youtube };
 export { engineer, ruler, shape };
 
-export { rightArrow, play, plus, telephon, notify, quote, ham, close };
+export {
+  rightArrow,
+  play,
+  plus,
+  telephon,
+  notify,
+  quote,
+  ham,
+  close,
+  brush,
+  helmet,
+  scrowdrivers,
+};
 
 export { heroImage1, heroImage2 };
 export { aboutImage1, aboutImage2 };
@@ -50,3 +68,5 @@ export {
   serviceImage5,
 };
 export { contactImage, handshake, finalvideo };
+
+export { aboutBanner, engineerImage, getAQuote };

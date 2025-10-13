@@ -56,7 +56,7 @@ const Hero = () => {
               services tailored to your business needs—on time, every time.
             </p>
           </Reveal>
-          <Button />
+          <Button className="bg-violet">Learn more</Button>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center">
