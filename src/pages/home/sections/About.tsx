@@ -35,7 +35,7 @@ const About = () => {
                 pellentesque
               </p>
             </Reveal>
-            <Button />
+            <Button className="bg-violet">Learn more</Button>
           </div>
           {/* Right */}
           <div className="hidden flex-1 sm:flex justify-center">
