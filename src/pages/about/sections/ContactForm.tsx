@@ -28,7 +28,7 @@ const ContactForm = () => {
           <Reveal className="text-sm font-semibold text-red-600 mb-2 tracking-widest uppercase">
             Appoinment
           </Reveal>
-          <Reveal className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8">
+          <Reveal className="text-3xl md:text-4xl font-extrabold text-blue-950 mb-8">
             Request a Quote
           </Reveal>
 

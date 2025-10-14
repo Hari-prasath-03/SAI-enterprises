@@ -3,18 +3,19 @@ import { motion } from "motion/react";
 import Reveal from "./Reveal";
 import { rightArrow } from "../../assets";
 
-const Button = ({
-  className,
-  children,
-}: {
+interface ButtonProps {
   className?: string;
-  children: string;
-}) => {
+  children: React.ReactNode;
+  onClick?: () => void;
+}
+
+const Button: React.FC<ButtonProps> = ({ className, children, onClick }) => {
   return (
     <Reveal>
       <motion.button
         whileHover="hover"
         className={`text-white py-2.5 px-8 sm:px-10 w-fit inline-flex gap-3 items-center cursor-pointer ${className}`}
+        onClick={() => onClick && onClick()}
       >
         <span>{children}</span>
         <motion.img

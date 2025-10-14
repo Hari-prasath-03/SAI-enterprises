@@ -12,8 +12,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, banner }) => {
         className="min-h-[35vh] sm:min-h-[50vh] bg-cover overflow-x-hidden"
         style={{ backgroundImage: `url(${banner})` }}
       >
-        <div className="absolute inset-0  overflow-x-hidden">
-          <div className="text-white relative z-10 -right-1/5 p-4 top-1/2 transform -translate-y-1/2 space-y-2 sm:space-y-6">
+        <div className="absolute inset-0 overflow-x-hidden">
+          <div className="text-white relative z-10 sm:-right-1/5 p-4 top-1/2 transform -translate-y-1/2 space-y-2 sm:space-y-6">
             <Reveal className="text-4xl md:text-5xl font-bold tracking-wider capitalize">
               {title}
             </Reveal>
