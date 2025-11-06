@@ -1,3 +1,4 @@
+import { contact } from "../../contents";
 import Reveal from "./Reveal";
 
 interface PageHeaderProps {
@@ -23,7 +24,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, banner }) => {
       </div>
       <div className="absolute right-0 sm:right-1/5 top-4/5 py-5 sm:py-8 px-10 sm:px-12 space-y-2.5 bg-bg border-t-8 border-red max-w-fit shadow-lg *:tracking-wider">
         <Reveal className="text-violet uppercase text-xs">call us today</Reveal>
-        <Reveal className="text-xl sm:text-2xl font-bold">+123 456 7890</Reveal>
+        <Reveal className="text-xl sm:text-2xl font-bold">
+          {contact.phone}
+        </Reveal>
       </div>
     </div>
   );

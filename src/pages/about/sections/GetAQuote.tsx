@@ -6,20 +6,21 @@ const GetAQuote = () => {
   const steps = [
     {
       id: "01",
-      title: "Kind Consultation",
-      desc: "Etiam ac leo at quam aliquet",
+      title: "Project Consultation",
+      desc: "We work closely with clients.",
     },
     {
       id: "02",
-      title: "Kind Consultation",
-      desc: "Etiam ac leo at quam aliquet",
+      title: "Engineering & Prototyping",
+      desc: "Rapid prototyping accelerates development.",
     },
     {
       id: "03",
-      title: "Kind Consultation",
-      desc: "Etiam ac leo at quam aliquet",
+      title: "Fabrication & Delivery",
+      desc: "Complete assemblies delivered to site.",
     },
   ];
+
   return (
     <section id="hero" className="min-h-screen mb-10 sm:mb-14 relative">
       <div
@@ -35,11 +36,13 @@ const GetAQuote = () => {
           </h1>
         </Reveal>
         <Reveal className="w-full sm:max-w-1/2 text-center opacity-90 px-1">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+          We deliver dependable fabrication and field services from concept
+          through completion, ensuring precision, quality, and reliable support
+          throughout every stage of your project.
         </Reveal>
-        <Button className="bg-red">Appoinment</Button>
+        <a href="#contact-form">
+          <Button className="bg-red">Appointment</Button>
+        </a>
       </div>
 
       <div className="sm:absolute bottom-0 flex sm:gap-6 flex-col w-full justify-center items-center sm:flex-row">

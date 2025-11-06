@@ -19,54 +19,46 @@ const Project = () => {
   const relatedProjects = [
     {
       image: gallery8,
-      title: "Construction Project",
+      title: "Solar Power Frame Fabrication",
     },
     {
       image: gallery7,
-      title: "Benoit Architecture",
+      title: "Automotive Equipment Assembly",
       isHighlight: true,
     },
     {
       image: gallery10,
-      title: "Modern Building",
+      title: "Logistics Center Enclosures",
     },
   ];
 
   return (
     <div className="page">
       <PageHeader title="Single Project" banner={singleProjectBanner} />
+
       <div className="max-w-7xl mx-auto bg-white py-26 px-2">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <div className="lg:col-span-2">
             <img
               src={project0}
-              alt="London Palace"
+              alt="FMCG Conveyor Project"
               className="w-full h-auto shadow-lg mb-8"
             />
 
             <Reveal className="space-y-4 text-gray-700 leading-relaxed mb-12">
               <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 16.32 and 16.33 of "de Finibus Bonorum
-                et Malorum" (The Extremes of Good and Evil) by Cicero, written
-                in 45 BC. This book is a treatise on the theory of ethics, very
-                popular during the Renaissance. The first line of Lorem Ipsum,
-                "Lorem ipsum dolor sit amet..", comes from a line in section
-                1.10.32.
+                This project involved precision fabrication and on-site assembly
+                of stainless-steel conveyor systems for an FMCG facility in
+                Chennai. Using CNC laser cutting and TIG welding, our team
+                delivered burr-free components with high dimensional accuracy
+                and a durable finish.
               </p>
 
               <p>
-                The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested. Sections 1.10.32 and
-                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                reproduced in their exact original form, accompanied by English
-                versions from the 1914 translation by H. M. Rackham.
+                Each section was fabricated in-house and installed by our field
+                engineers to ensure alignment and performance compliance. The
+                integration of fabricated frames, support brackets, and housings
+                reduced installation time and improved long-term reliability.
               </p>
             </Reveal>
 
@@ -121,16 +113,14 @@ const Project = () => {
           <div className="lg:col-span-1">
             <div className="sticky top-8">
               <Reveal className="text-3xl font-bold text-gray-900 mb-6">
-                London Palace
+                FMCG Conveyor Installation
               </Reveal>
 
               <Reveal className="text-gray-700 leading-relaxed mb-8">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting.
+                Fabricated and installed structural frames and enclosures as
+                part of a full-service industrial fabrication contract. Work
+                included CNC cutting, forming, welding, and final assembly
+                followed by on-site commissioning and maintenance support.
               </Reveal>
 
               <div className="bg-gray-50 p-6 mb-6">
@@ -141,25 +131,27 @@ const Project = () => {
                 <div className="space-y-3">
                   <Reveal className="flex justify-between">
                     <span className="text-gray-600">Client:</span>
-                    <span className="font-semibold text-gray-900">Ren Bix</span>
+                    <span className="font-semibold text-gray-900">
+                      FMCG Manufacturing Plant, Chennai
+                    </span>
                   </Reveal>
                   <Reveal className="flex justify-between">
                     <span className="text-gray-600">Category:</span>
                     <span className="font-semibold text-gray-900">
-                      London City Building
+                      Fabrication & Field Installation
                     </span>
                   </Reveal>
                   <Reveal className="flex justify-between">
                     <span className="text-gray-600">Completed on:</span>
                     <span className="font-semibold text-gray-900">
-                      20 January, 2023
+                      July 2023
                     </span>
                   </Reveal>
                 </div>
               </div>
 
               <div className="flex gap-3">
-                <button className="w-10 h-10 bg-pink-600 text-white  flex items-center justify-center hover:bg-pink-700 transition-colors">
+                <button className="w-10 h-10 bg-pink-600 text-white flex items-center justify-center hover:bg-pink-700 transition-colors">
                   <svg
                     className="w-5 h-5"
                     fill="currentColor"
@@ -168,7 +160,7 @@ const Project = () => {
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
                 </button>
-                <button className="w-10 h-10 bg-pink-600 text-white  flex items-center justify-center hover:bg-pink-700 transition-colors">
+                <button className="w-10 h-10 bg-pink-600 text-white flex items-center justify-center hover:bg-pink-700 transition-colors">
                   <svg
                     className="w-5 h-5"
                     fill="currentColor"
@@ -200,7 +192,9 @@ const Project = () => {
                 {project.isHighlight && (
                   <div className="absolute z-10 inset-0 flex flex-col items-center justify-center text-white bg-red/80">
                     <Reveal className="text-sm mb-2">Commercial</Reveal>
-                    <Reveal className="text-2xl font-bold mb-4">{project.title}</Reveal>
+                    <Reveal className="text-2xl font-bold mb-4">
+                      {project.title}
+                    </Reveal>
                     <img
                       src={plus}
                       alt="Plus"

@@ -1,5 +1,6 @@
 import React from "react";
 import { twitter, facebook, linkedin, youtube } from "../assets";
+import { contact } from "../contents";
 
 interface NavLink {
   id: number;
@@ -94,7 +95,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex items-center justify-center mb-6">
             <h2 className="text-4xl md:text-5xl font-extrabold">
-              +1 634 7638 654
+              {contact.phone}
             </h2>
           </div>
 
@@ -113,8 +114,7 @@ const Footer: React.FC = () => {
           </div>
 
           <p className={`text-sm mt-auto px-4 opacity-80 max-w-sm`}>
-            Fusce eu magna quis velit efficitur rhoncus. Vivamus vehicula, neque
-            a velit.
+            © {new Date().getFullYear()} Sai Enterprisess. All rights reserved.
           </p>
         </div>
 

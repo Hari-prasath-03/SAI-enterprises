@@ -19,20 +19,21 @@ const Hero = () => {
 
   const specilisations = [
     {
-      name: "General Contract",
+      name: "Laser Cutting & Precision Sheet Metal Fabrication",
       content:
-        "Quisque condimentum erat ac orci blandit, in sollicitudin vestibulum.",
+        "We leverage cutting-edge technologies in laser cutting, precision sheet metal fabrication, automated shearing, folding (bending), and R&D-driven prototyping to deliver custom-engineered components.",
       icon: engineer,
     },
     {
-      name: "Project Planning",
-      content: "Nullam commodo tincidunt nisl, nec vehicula dui interdum nec.",
+      name: "High-Tolerance Manufacturing",
+      content:
+        "We utilize advanced, high-tolerance manufacturing methods such as CNC laser cutting and precision welding to meet demanding safety, durability, and performance requirements.",
       icon: ruler,
     },
     {
-      name: "General Contract",
+      name: "R&D and Rapid Prototyping",
       content:
-        "Sed vitae aliquet ipsum, ut ornare lectus. Proin sed. Sed nunc.",
+        "We continuously invest in R&D and rapid prototyping, which enables swift design validation and reduces development time. Our focus on iterative prototyping ensures faster time-to-market and optimized product designs.",
       icon: shape,
     },
   ];
@@ -53,10 +54,12 @@ const Hero = () => {
           <Reveal>
             <p className="text-white/90 text-lg sm:text-2xl sm:max-w-3xl">
               We delivers high-quality fabrication, machining, and field
-              services tailored to your business needs—on time, every time.
+              services tailored to your business needs-on time, every time.
             </p>
           </Reveal>
-          <Button className="bg-violet">Learn more</Button>
+          <a href="#about">
+            <Button className="bg-violet">Learn more</Button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center">
@@ -94,7 +97,9 @@ const Hero = () => {
                       <h2 className="text-lg font-semibold text-violet">
                         {name}
                       </h2>
-                      <p className="text-text/80 text-sm">{content}</p>
+                      <p className="text-text/80 text-sm">
+                        {content.substring(0, 85)}...
+                      </p>
                     </div>
                   </div>
                 </Reveal>

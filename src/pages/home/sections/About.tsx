@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { aboutImage1, aboutImage2, play } from "../../../assets";
 import Button from "../../../components/ui/Button";
 import Reveal from "../../../components/ui/Reveal";
@@ -17,25 +18,30 @@ const About = () => {
               </Reveal>
               <Reveal>
                 <h1 className="text-text text-4xl sm:text-5xl font-bold tracking-tight">
-                  With our knowledge we guarantee success
+                  Engineering precision for tomorrow's manufacturing
                 </h1>
               </Reveal>
             </div>
             <Reveal>
               <p className="text-violet text-base">
-                Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat
-                congue
+                Chennai-based industrial solutions provider delivering
+                custom-engineered metal fabrication for modern manufacturing.
               </p>
             </Reveal>
             <Reveal>
               <p className="text-base text-black/80 leading-7">
-                Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus
-                rutrum leo consectetur accumsan. Vivamus viverra ante turpis,
-                dignissim condimentum elit egestas sit amet. Phasellus faucibus
-                pellentesque
+                We specialize in laser cutting, precision sheet metal
+                fabrication, automated shearing, and folding to support critical
+                industries including energy, logistics, construction,
+                automobile, and FMCG. With advanced manufacturing methods,
+                in-house R&D, and rapid prototyping, we accelerate product
+                development and ensure high-tolerance quality from concept to
+                completion.
               </p>
             </Reveal>
-            <Button className="bg-violet">Learn more</Button>
+            <Link to="/about">
+              <Button className="bg-violet">Learn more</Button>
+            </Link>
           </div>
           {/* Right */}
           <div className="hidden flex-1 sm:flex justify-center">

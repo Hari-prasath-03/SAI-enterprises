@@ -6,6 +6,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-white overflow-x-hidden">
       <Heading title="Testimonials" subtitle="Our Clients Say" />
+
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <div className="w-full">
           <img
@@ -22,16 +23,19 @@ const Testimonials = () => {
 
           <Reveal>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Suspendisse tortor enim, varius et porttitor sit amet, posuere
-              vitae massa. Proin ac quam eu erat semper sagittis in vitae elit.
-              Nam neque erat, semper vel ultrices in, finibus eu magna.
-              Pellentesque habitant morbi tristique.
+              SAI ENTERPRISESS delivered our fabrication project with excellent
+              precision and commitment. Their CNC cutting and on-site
+              installation were on schedule, and the final assemblies exceeded
+              our quality expectations. A reliable partner for industrial
+              fabrication needs.
             </p>
           </Reveal>
 
           <Reveal>
-            <p className="font-semibold text-gray-800">Katy Grey</p>
-            <p className="text-sm text-blue-600">CEO Grey Industries</p>
+            <p className="font-semibold text-gray-800">
+              Operations Manager, FMCG Plant
+            </p>
+            <p className="text-sm text-blue-600">Chennai, India</p>
           </Reveal>
 
           {/* Pagination Dots */}

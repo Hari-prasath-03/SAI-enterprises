@@ -10,24 +10,25 @@ import Reveal from "../../../components/ui/Reveal";
 const Service = () => {
   const services = [
     {
-      title: "Research & Analysis",
+      title: "Laser Cutting",
       content:
-        "Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus.",
+        "Precision CNC laser cutting produces complex shapes with micron-level accuracy and burr-free edges.",
       image: serviceImage2,
     },
     {
-      title: "Industry Development",
+      title: "Metal Fabrication",
       content:
-        "Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus.",
+        "Full-spectrum metal fabrication including CNC cutting, press braking, and welding to produce custom components.",
       image: serviceImage3,
     },
     {
-      title: "Production Launch",
+      title: "R&D Prototyping",
       content:
-        "Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus.",
+        "Rapid prototyping and iterative R&D to create functional metal prototypes for early testing and design validation.",
       image: serviceImage4,
     },
   ];
+
   return (
     <section id="service" className="py-10 sm:py-20">
       <div className="flex flex-col sm:grid sm:grid-cols-5">
@@ -48,7 +49,7 @@ const Service = () => {
             <div className="relative z-10 h-full flex flex-col justify-between p-6 overflow-hidden">
               <div className="flex flex-col text-white gap-7">
                 <Reveal>
-                  <h3 className="text-4xl font-bold">{service.title}</h3>
+                  <h3 className="text-3xl font-bold">{service.title}</h3>
                 </Reveal>
                 <Reveal>
                   <p className="text-white/80 text-sm">{service.content}</p>

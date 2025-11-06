@@ -5,22 +5,20 @@ const Contact = () => {
   const socials = [
     {
       name: "Company phone",
-      line1: "+ 917338899988",
-      line2: " +16347638654",
+      line1: "+91-7338899988",
       image: telephon,
     },
     {
       name: "Destro emails",
-      line1: "8E-mail:saienterprisess",
-      line2: "@gmail.com",
+      line1: "saienterprisess1920@gmail.com",
       image: notify,
     },
   ];
   const address = [
     <p>No: 8640, TNHB, Ayapakkam,</p>,
-    <p>Chennai- 600 077</p>,
-    <p>410,13th STREET SIDCO INDUS ESTATE AMBATTUR</p>,
-    <p>CHENNAI--600098</p>,
+    <p>Chennai - 600 077</p>,
+    <p>410, 13th Street, SIDCO Industrial Estate, Ambattur</p>,
+    <p>CHENNAI - 600 098</p>,
   ];
   return (
     <section id="contact" className="py-20 overflow-x-hidden">
@@ -43,8 +41,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {socials.map(({ image, name, line1, line2 }, i) => (
-          <div key={i} className="flex flex-col p-6 mx-auto sm:mx-0 min-w-[300px] sm:min-w-fit">
+        {socials.map(({ image, name, line1 }, i) => (
+          <div
+            key={i}
+            className="flex flex-col p-6 mx-auto sm:mx-0 min-w-[300px] sm:min-w-fit"
+          >
             <div className="flex gap-4.5 items-center">
               <Reveal>
                 <img
@@ -61,7 +62,6 @@ const Contact = () => {
                 </Reveal>
                 <Reveal className="*:text-text">
                   <p>{line1}</p>
-                  <p>{line2}</p>
                 </Reveal>
               </div>
             </div>

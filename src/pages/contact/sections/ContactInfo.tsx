@@ -1,19 +1,21 @@
 const ContactInfo = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Company Address */}
       <div className="bg-white p-6 shadow-sm border-l-4 border-red-600">
         <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
           Company Address
         </p>
         <h3 className="text-lg font-bold text-gray-900 leading-tight">
-          Themeforest, Envato
+          SAI ENTERPRISESS
           <br />
-          HQ 24 Fifth st., Los
+          No: 8640, TNHB, Ayapakkam,
           <br />
-          Angeles, USA
+          Chennai – 600 077, India
         </h3>
       </div>
 
+      {/* Company Phones */}
       <div className="bg-white p-6 shadow-sm flex items-start gap-4">
         <div className="bg-red-600 text-white p-3 rounded-full flex-shrink-0">
           <svg
@@ -34,11 +36,11 @@ const ContactInfo = () => {
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
             Company Phones
           </p>
-          <p className="text-base font-bold text-gray-900">+1 234 5678 098</p>
-          <p className="text-base font-bold text-gray-900">+1 634 7638 654</p>
+          <p className="text-base font-bold text-gray-900">+91 73388 99988</p>
         </div>
       </div>
 
+      {/* System Emails */}
       <div className="bg-white p-6 shadow-sm flex items-start gap-4">
         <div className="bg-blue-600 text-white p-3 rounded-full flex-shrink-0">
           <svg
@@ -55,13 +57,12 @@ const ContactInfo = () => {
             />
           </svg>
         </div>
-        <div>
+        <div className="text-wrap">
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
             System Emails
           </p>
-          <p className="text-base font-bold text-gray-900">dustro@gmail.com</p>
           <p className="text-base font-bold text-gray-900">
-            dustro.info@gmail.com
+            saienterprisess1920@gmail.com
           </p>
         </div>
       </div>
